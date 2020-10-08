@@ -1,0 +1,231 @@
+/* 
+    font-family: 'Pacifico', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* 
+    font-family: 'Roboto', sans-serif; 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #17223b;
+}
+
+section {
+    padding: 35px;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    section {
+        padding: 15px;
+    }
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4em;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.103);
+    }
+    .navbar-nav {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.103);
+    }
+    .navbar-nav {
+        padding: 15px;
+    }
+}
+
+.svg01 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 400px;
+}
+
+.svg02 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.umbrella-content h1 {
+    position: absolute;
+    top: 42%;
+    left: 11%;
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .umbrella-content h1 {
+        top: 52%;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .umbrella-content h1 {
+        top: 42%;
+        font-size: 3.5em;
+    }
+}
+
+.umbrella-content .umbrella-text {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    font-size: 15em;
+    font-weight: 600;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .umbrella-content .umbrella-text {
+        top: 50%;
+        left: 10%;
+        font-size: 7em;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .umbrella-content .umbrella-text {
+        font-size: 10em;
+    }
+}
+
+.umbrella-content .shop-btn {
+    position: absolute;
+    bottom: 8%;
+    left: 11%;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f9fa;
+    background-color: #ec0000;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.umbrella-content .shop-btn:focus {
+    box-shadow: 0 0 0 0.25rem #ec00005b;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .umbrella-content .shop-btn {
+        bottom: 20%;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .umbrella-content .shop-btn {
+        bottom: 23%;
+    }
+}
+
+.umbrella-img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 0 20px #0f0f0f);
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .umbrella-img {
+        width: 300px;
+        height: 300px;
+        top: 30%;
+        left: 25%;
+        transform: rotate(-20deg);
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .umbrella-img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.price-tag {
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    word-wrap: break-word;
+    font-size: 1em;
+    text-align: center;
+    line-height: 20px;
+    color: #0f0f0f;
+    font-weight: 600;
+    box-shadow: 0 0 10px #0f0f0f;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .price-tag {
+        left: 60%;
+    }
+}
+
+.social-media {
+    width: 40px;
+    height: 120px;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+@media (min-width: 350px) and (max-width: 769px) {
+    .social-media {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+}
